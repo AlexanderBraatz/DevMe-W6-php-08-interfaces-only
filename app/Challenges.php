@@ -12,9 +12,10 @@ class Challenges
 
         // load challenges
         $this->shapes();
-        // $this->extrude();
+        $this->extrude();
         // $this->library();
 
+        // load Tricksy challenges
         // $tricksy = new Tricksy();
         // $tricksy->start();
     }
@@ -82,6 +83,6 @@ class Challenges
         $library->addShelf($shelf);
         $library->addShelf($otherShelf);
 
-        dump($library->titles()); // array:5 [ 0 => "Zero: The Biography of a Dangerous Idea" 1 => "Hunt for the Wilderpeople" 2 => "Teal Album" 3 => "The Power Broker" 4 => "Black Sheep" ]
+        // dump($library->titles()); // ["Zero: The Biography of a Dangerous Idea", "Hunt for the Wilderpeople", "Teal Album", "The Power Broker", "Black Sheep"]
     }
 }
